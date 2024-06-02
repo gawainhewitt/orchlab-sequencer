@@ -1,11 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Orchlab</title>
-</head>
-<body>
-    this is the one
-</body>
+  <head>
+    <title>Orchlab Sequencer</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+  </head>
+  <body>
+
+    <div id="wrapper">
+
+      <div class="top-box" id ="top-box">
+        <p>top-box</p>
+      </div>
+    
+      <div id="middle-box">
+        <div class="one" id="one">
+          <p>middle-box flexbox row 1</p>
+          <div class="column" id="mouseEnter"><p id="mouseEnterText">mouseEnter 0</p></div>
+        </div>
+        <div class="sequencer-container" id="sequencer-container">
+
+          <div class="notesequence" id="r0s0"> <img class="melodic-image" src="./images/harp-grey.png" alt="harp off row 0 step 0"> </div> 
+          <div class="notesequence" id="r0s1"> <img class="melodic-image" src="./images/harp-grey.png" alt="harp off row 0 step 1"> </div> 
+          <div class="notesequence" id="r0s2"> <img class="melodic-image" src="./images/harp-grey.png" alt="harp off row 0 step 2"> </div> 
+          <div class="notesequence" id="r0s3"> <img class="melodic-image" src="./images/harp-grey.png" alt="harp off row 0 step 3"> </div> 
+          <div class="notesequence" id="r0s4"> <img class="melodic-image" src="./images/harp-grey.png" alt="harp off row 0 step 4"> </div> 
+          <div class="notesequence" id="r0s5"> <img class="melodic-image" src="./images/harp-grey.png" alt="harp off row 0 step 5"> </div> 
+          <div class="notesequence" id="r0s6"> <img class="melodic-image" src="./images/harp-grey.png" alt="harp off row 0 step 6"> </div> 
+          <div class="notesequence" id="r0s7"> <img class="melodic-image" src="./images/harp-grey.png" alt="harp off row 0 step 7"> </div>
+          
+          <div class="notesequence" id="r1s0"> <img class="melodic-image" src="./images/harp-grey.png" alt="harp off row 1 step 0"> </div> 
+          <div class="notesequence" id="r1s1"> <img class="melodic-image" src="./images/harp-grey.png" alt="harp off row 1 step 1"> </div> 
+          <div class="notesequence" id="r1s2"> <img class="melodic-image" src="./images/harp-grey.png" alt="harp off row 1 step 2"> </div> 
+          <div class="notesequence" id="r1s3"> <img class="melodic-image" src="./images/harp-grey.png" alt="harp off row 1 step 3"> </div> 
+          <div class="notesequence" id="r1s4"> <img class="melodic-image" src="./images/harp-grey.png" alt="harp off row 1 step 4"> </div> 
+          <div class="notesequence" id="r1s5"> <img class="melodic-image" src="./images/harp-grey.png" alt="harp off row 1 step 5"> </div> 
+          <div class="notesequence" id="r1s6"> <img class="melodic-image" src="./images/harp-grey.png" alt="harp off row 1 step 0"> </div> 
+          <div class="notesequence" id="r1s7"> <img class="melodic-image" src="./images/harp-grey.png" alt="harp off row 1 step 0"> </div>
+
+          <div class="notesequence" id="r2s0"></div> <div class="notesequence" id="r2s1"></div> 
+          <div class="notesequence" id="r2s2"></div> <div class="notesequence" id="r2s3"></div> 
+          <div class="notesequence" id="r2s4"></div> <div class="notesequence" id="r2s5"></div> 
+          <div class="notesequence" id="r2s6"></div> <div class="notesequence" id="r2s7"></div>
+
+          <div class="notesequence" id="r3s0"></div> <div class="notesequence" id="r3s1"></div> 
+          <div class="notesequence" id="r3s2"></div> <div class="notesequence" id="r3s3"></div> 
+          <div class="notesequence" id="r3s4"></div> <div class="notesequence" id="r3s5"></div> 
+          <div class="notesequence" id="r3s6"></div> <div class="notesequence" id="r3s7"></div>
+
+          <div class="notesequence" id="r4s0"></div> <div class="notesequence" id="r4s1"></div> 
+          <div class="notesequence" id="r4s2"></div> <div class="notesequence" id="r4s3"></div> 
+          <div class="notesequence" id="r4s4"></div> <div class="notesequence" id="r4s5"></div> 
+          <div class="notesequence" id="r4s6"></div> <div class="notesequence" id="r4s7"></div>
+          
+          <div class="notesequence" id="r5s0"></div> <div class="notesequence" id="r5s1"></div> 
+          <div class="notesequence" id="r5s2"></div> <div class="notesequence" id="r5s3"></div> 
+          <div class="notesequence" id="r5s4"></div> <div class="notesequence" id="r5s5"></div> 
+          <div class="notesequence" id="r5s6"></div> <div class="notesequence" id="r5s7"></div>
+
+          <div class="notesequence" id="r6s0"></div> <div class="notesequence" id="r6s1"></div> 
+          <div class="notesequence" id="r6s2"></div> <div class="notesequence" id="r6s3"></div> 
+          <div class="notesequence" id="r6s4"></div> <div class="notesequence" id="r6s5"></div> 
+          <div class="notesequence" id="r6s6"></div> <div class="notesequence" id="r6s7"></div>
+
+          <div class="drumsequence" id="d0s0"></div> <div class="drumsequence" id="d0s1"></div> 
+          <div class="drumsequence" id="d0s2"></div> <div class="drumsequence" id="d0s3"></div> 
+          <div class="drumsequence" id="d0s4"></div> <div class="drumsequence" id="d0s5"></div> 
+          <div class="drumsequence" id="d0s6"></div> <div class="drumsequence" id="d0s7"></div>
+
+          <div class="drumsequence" id="d1s0"></div> <div class="drumsequence" id="d1s1"></div> 
+          <div class="drumsequence" id="d1s2"></div> <div class="drumsequence" id="d1s3"></div> 
+          <div class="drumsequence" id="d1s4"></div> <div class="drumsequence" id="d1s5"></div> 
+          <div class="drumsequence" id="d1s6"></div> <div class="drumsequence" id="d1s7"></div>
+
+          <div class="drumsequence" id="d2s0"></div> <div class="drumsequence" id="d2s1"></div> 
+          <div class="drumsequence" id="d2s2"></div> <div class="drumsequence" id="d2s3"></div> 
+          <div class="drumsequence" id="d2s4"></div> <div class="drumsequence" id="d2s5"></div> 
+          <div class="drumsequence" id="d2s6"></div> <div class="drumsequence" id="d2s7"></div>
+
+        </div>
+        <div class="three" id="three">
+          <p id="row3">middle-box flexbox row 3</p>
+          <div class="column" id="col3"><p>inner flexbox column</p></div>
+        </div>
+      </div>
+
+      <div class="bottom-box" id="bottom">
+        <p id="bttext">bottom-box</p>
+      </div>
+
+    </div>
+
+    <script src="bundle.js"></script>
+  </body>
 </html>

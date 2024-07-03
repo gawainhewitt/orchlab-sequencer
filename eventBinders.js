@@ -9,11 +9,19 @@ class EventBinders {
     for (let i = 0; i < numberOfMelodicRows; i++) {
       this.melodicSequencerArray[i] = [];
       for (let j = 0; j < numberOfSteps; j++) {
-        this.melodicSequencerArray[i][j] = document.querySelector(`#r${i}s${j}`);
+        this.melodicSequencerArray[i][j] = `r${i}s${j}`;
       }
     }
 
-    // i've got to here which is to say I have, I think, got all the melodic dom elements and assigned them to an array so I can do things like put pictures in them
+    const numberOfRhythmicRows = 3;
+    this.rhythmicSequencerArray = [];
+
+    for (let i = 0; i < numberOfRhythmicRows; i++) {
+      this.rhythmicSequencerArray[i] = [];
+      for (let j = 0; j < numberOfSteps; j++) {
+        this.rhythmicSequencerArray[i][j] = `d${i}s${j}`;
+      }
+    }
 
     this.mouseEnter = document.querySelector("#mouseEnter");
     this.mouseEnterText = document.querySelector('#mouseEnterText');

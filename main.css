@@ -75,7 +75,7 @@ p {
   width: 100%;
 }
 
-.melodic-image {
+.melodic-image, .kick-image, .snare-image, .cymbal-image {
   height: 6vh;
   display: block;
   margin-left: auto;

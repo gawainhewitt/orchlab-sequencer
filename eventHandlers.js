@@ -21,15 +21,30 @@ class EventHandlers {
     this.eventBinder.bindTouchMove(this.#handleTouchMove);
     this.eventBinder.bindTouchCancel(this.#handleCancel);
 
+    for(let i = 0; i < this.eventBinder.melodicSequencerArray.length; i++) {
+      for(let j = 0; j < this.eventBinder.melodicSequencerArray[i].length; j++){
+        this.domManager.setupMelodicSequencerImages(this.eventBinder.melodicSequencerArray[i][j]);
+      }
+    }
+
+    for(let i = 0; i < this.eventBinder.rhythmicSequencerArray.length; i++) {
+      for(let j = 0; j < this.eventBinder.rhythmicSequencerArray[i].length; j++){
+        this.domManager.setupDrumSequencerImages(this.eventBinder.rhythmicSequencerArray[i][j]);
+      }
+    }
+
     this.handleStepChange();
   }
 
-  // come back here to get all rows able to change image regarding to step. at the moment just the first row
   handleStepChange() {
-    // the following should obviously be on a for loop
-    this.domManager.drawMelodicSequencer(this.eventBinder.melodicSequencerArray[0][this.sequencerStep]);
-    this.domManager.drawMelodicSequencer(this.eventBinder.melodicSequencerArray[1][this.sequencerStep]);
-
+    for(let i = 0; i < this.eventBinder.melodicSequencerArray.length; i++) {
+      this.domManager.drawSequencer(this.eventBinder.melodicSequencerArray[i][this.sequencerStep], "step", "melodic");
+    }
+    for(let i = 0; i < this.eventBinder.rhythmicSequencerArray.length; i++) {
+      for(let j = 0; j < this.eventBinder.rhythmicSequencerArray[i].length; j++){
+        this.domManager.drawSequencer(this.eventBinder.rhythmicSequencerArray[i][this.sequencerStep], "step", i);
+      }
+    }
   }
 
   handleMouseEnter = (type) => {
